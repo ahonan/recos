@@ -2,7 +2,7 @@ a:link{
     color:black;
     text-decoration:none;
 }
-#header_1:hover,#header_2:hover,#header_3:hover{
+#header_2:hover,#header_3:hover{
     opacity:.6;
 }
 body{
