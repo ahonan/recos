@@ -44,3 +44,7 @@ body{
     clear:both;
     margin-bottom:50px;
 }
+img{
+    height: 500px;
+    width: 500px;
+}
