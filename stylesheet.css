@@ -1,0 +1,57 @@
+body{
+  font-family:"Times New Roman", Times, serif;
+  color:white;
+  left:0;
+  margin:0;
+  position:relative;
+  overflow:hidden;
+  background-color:#808080;
+  height:100%;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+.nav {
+  background: #202024 url('http://goo.gl/1oxd6r') repeat left top;
+  left: -250px;
+  height:100%;
+  position: fixed;
+  width: 250px;
+}
+.nav ul{
+  list-style:none;
+  border-top:1px solid white;
+  margin:0;
+  padding:0;
+}
+.nav li{
+  border-bottom:1px solid white;
+  line-height:45px;
+  padding-left:20px;
+}
+.nav a{
+  text-decoration:none;
+  color:white;
+}
+.caret{
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+  display:inline-block;
+  margin-left:5px;
+}
+.sub-nav{
+  display:none;
+}
+#cdm{
+  border-bottom:none;
+}
+#menu-icon{
+  cursor:pointer;
+  float:left;
+  margin:5px 0px 5px 5px;
+  padding:5px 5px 0px 5px;
+}
