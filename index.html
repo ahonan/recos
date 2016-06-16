@@ -12,42 +12,15 @@
             <ul id="main-list">
                 <a href="/home/"><li>Home</li></a>
                 <a href="#"><li>
-                    <div class="dropdown">Decision Makers<div class="caret"></div></div>
+                    <div class="dropdown">Decision Makers<div class="caret-up"></div><div class="caret-down"></div></div>
                     <ul class="sub-nav">
                         <a href="/basic-decisionmaker/"><li>Basic Decision Maker</li></a>
                         <a href="/decisionmaker/"><li id="cdm">Custom Decision Maker</li></a>
                     </ul>
                 </li></a>
-            </ul>
+                <a href="#"><li>Test</li></a> 
         </div>
         <script src="https://goo.gl/hL9XZ4"></script>
-        <script>
-            /*global $*/
-            var main=function(){
-                $('#menu-icon').click(function(){
-                    if($('.nav').hasClass('open')){
-                        $('.nav').removeClass('open').animate({
-                            left:"-250px"
-                        }, 200);
-                        $('body').animate({
-                            left:"0px"
-                        }, 200);
-                    }else{
-                        $('.nav').addClass('open').animate({
-                            left:"0px"
-                        }, 200);
-                        $('body').animate({
-                            left:"250px"
-                        }, 200);
-                    }
-                });
-                $('.dropdown').click(function(){
-                    $('.sub-nav').toggle()
-                });
-            };
-        
-
-            $(document).ready(main);
-        </script>
+        <script src="site.js"></script>
     </body>
 </html>
