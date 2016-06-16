@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
     <title>Home</title>
-    <head><link rel="icon" href="http://icons.iconarchive.com/icons/artua/mac/512/Setting-icon.png"></link></head>
     <body>
         <div class="main">
-            <header class="site-header">
-                    <div id="header_1">Home</div>
-                <nav class="site-nav">
-                    <a href="/basic-decisionmaker/"><div id="header_2">Basic Decision Maker</div></a>
-                    <a href="/decisionmaker/"><div id="header_3">Decision Maker</div></a>
-                </nav>
-            </header>
-            <div id="hr"></div>
+            <div id="menu-icon">
+                <img src="https://goo.gl/Ri13YJ">
+            </div>
         </div>
+        <div class="nav">
+            <ul id="main-list">
+                <a href="/home/"><li>Home</li></a>
+                <a href="#"><li>
+                    <div class="dropdown">Decision Makers</div>
+                    <ul class="sub-nav">
+                        <a href="/basic-decisionmaker/"><li>Basic Decision Maker</li></a>
+                        <a href="/decisionmaker/"><li id="cdm">Custom Decision Maker</li></a>
+                    </ul>
+                </li></a>
+            </ul>
+        </div>
+        <script src="https://goo.gl/hL9XZ4"></script>
+        <script>
+            /*global $*/
+            var main=function(){
+                $('#menu-icon').click(function(){
+                    if($('.nav').hasClass('open')){
+                        $('.nav').removeClass('open').animate({
+                            left:"-250px"
+                        }, 200);
+                        $('body').animate({
+                            left:"0px"
+                        }, 200);
+                    }else{
+                        $('.nav').addClass('open').animate({
+                            left:"0px"
+                        }, 200);
+                        $('body').animate({
+                            left:"250px"
+                        }, 200);
+                    }
+                });
+                $('.dropdown').click(function(){
+                    $('.sub-nav').toggle()
+                });
+            };
+        
+
+            $(document).ready(main);
+        </script>
     </body>
 </html>
