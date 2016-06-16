@@ -5,12 +5,8 @@ body{
   margin:0;
   position:relative;
   overflow:hidden;
-  background-color:#808080;
+  background:#000000 url("http://www.transparenttextures.com/patterns/diagmonds.png") repeat left top;
   height:100%;
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
 }
 .nav {
   background: #202024 url('http://goo.gl/1oxd6r') repeat left top;
