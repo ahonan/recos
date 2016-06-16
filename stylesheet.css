@@ -34,13 +34,22 @@ body{
   text-decoration:none;
   color:white;
 }
-.caret{
+.caret-down{
   width: 0; 
   height: 0; 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid white;
   display:inline-block;
+  margin-left:5px;
+}
+.caret-up{
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid white;
+  display:none;
   margin-left:5px;
 }
 .sub-nav{
