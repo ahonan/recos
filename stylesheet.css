@@ -1,41 +1,43 @@
 body{
   font-family:"Times New Roman", Times, serif;
-  color:white;
   left:0;
   margin:0;
   position:relative;
   overflow:hidden;
-  background:#000000 url("http://www.transparenttextures.com/patterns/diagmonds.png") repeat left top;
+  background:#fff url("http://goo.gl/MG8PHu") repeat left top;
   height:100%;
 }
 .nav {
-  background: #202024 url('http://goo.gl/1oxd6r') repeat left top;
+  background: none;
   left: -250px;
+  top:-2px;
   height:100%;
   position: fixed;
-  width: 250px;
+  width: 248px;
+  border-right:2px solid black;
 }
 .nav ul{
   list-style:none;
-  border-top:1px solid white;
+  border-top:2px solid black;
   margin:0;
   padding:0;
 }
 .nav li{
-  border-bottom:1px solid white;
+  border-bottom:2px solid black;
   line-height:45px;
   padding-left:20px;
 }
 .nav a{
   text-decoration:none;
-  color:white;
+  color:black;
+  font-weight:600;
 }
 .caret-down{
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid white;
+  border-top: 5px solid black;
   display:inline-block;
   margin-left:5px;
 }
@@ -44,8 +46,8 @@ body{
   height: 0; 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid white;
-  display:none;
+  border-bottom: 5px solid black;
+  display:inline-block;
   margin-left:5px;
 }
 .sub-nav{
@@ -59,4 +61,17 @@ body{
   float:left;
   margin:5px 0px 5px 5px;
   padding:5px 5px 0px 5px;
+}
+.main{
+  border-radius:15px;
+  border: 2px solid black;
+  padding: 4px;
+  background-color:#fffcf5;
+  margin:auto;
+  width:75%;
+  height:10000px;
+  top:10px;
+  clear:both;
+  background: #696969 url("http://goo.gl/MG8PHu") repeat left top;
+  text-align:center;
 }
