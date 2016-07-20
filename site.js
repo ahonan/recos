@@ -20,5 +20,3 @@ $('.dropdown').click(function(){
 });
 };
 $(document).ready(main);
-
-$(document).ready(main);
