@@ -4,8 +4,7 @@ body{
   margin:0;
   position:relative;
   overflow:hidden;
-  background:#fff url("http://goo.gl/MG8PHu") repeat left top;
-  height:100%;
+  background:#696969 url("http://goo.gl/MG8PHu") repeat left top;
 }
 .nav {
   background: none;
@@ -14,22 +13,22 @@ body{
   height:100%;
   position: fixed;
   width: 248px;
-  border-right:2px solid black;
+  border-right:1px solid white;
 }
 .nav ul{
   list-style:none;
-  border-top:2px solid black;
+  border-top:1px solid white;
   margin:0;
   padding:0;
 }
 .nav li{
-  border-bottom:2px solid black;
+  border-bottom:1px solid white;
   line-height:45px;
   padding-left:20px;
 }
 .nav a{
   text-decoration:none;
-  color:black;
+  color:white;
   font-weight:600;
 }
 .caret-down{
@@ -37,7 +36,7 @@ body{
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid black;
+  border-top: 5px solid white;
   display:inline-block;
   margin-left:5px;
 }
@@ -46,7 +45,7 @@ body{
   height: 0; 
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid white;
   display:inline-block;
   margin-left:5px;
 }
@@ -66,12 +65,12 @@ body{
   border-radius:15px;
   border: 2px solid black;
   padding: 4px;
-  background-color:#fffcf5;
+  
   margin:auto;
   width:75%;
-  height:10000px;
+  height:1000px;
   top:10px;
   clear:both;
-  background: #696969 url("http://goo.gl/MG8PHu") repeat left top;
+  background: #fff url("http://goo.gl/MG8PHu") repeat left top;
   text-align:center;
 }
