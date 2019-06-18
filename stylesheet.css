@@ -21,6 +21,7 @@ div {
   width: 100%;
   max-width: none;
   overflow: visible;
+  margin-bottom: 20px;
 }
 
 #header-bar {
@@ -48,13 +49,13 @@ div {
   position: relative;
   display: inline-block;
   font-size: 15px;
-  font-weight: 550;
+  font-weight: 500;
   color: white;
   padding-left: 20px;
   padding-top: 13px;
   padding-right: 20px;
   letter-spacing: 0.05em;
-  font-family: monospace;
+  font-family: "PT Sans";
   text-decoration: none;
 }
 
@@ -68,7 +69,8 @@ a.homehead {
 }
 
 .main{
-  
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #banner {
@@ -76,16 +78,16 @@ a.homehead {
   background-image: url("/home/bookshelf.jpg");
   background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 30px;
   padding-right: 30px;
   background-size: cover;
+  border-radius: 15px;
 }
 
 #banner_label {
-  font-size: 55px;
-  font-family: monospace;
+  font-size: 60px;
   line-height: 1.3;
   font-weight: 500;
   letter-spacing: .025em;
