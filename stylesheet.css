@@ -3,13 +3,25 @@ body{
   left:0;
   margin:0;
   position:relative;
-  overflow:hidden;
+  overflow: hidden;
   background:#696969 url("http://goo.gl/MG8PHu") repeat left top;
+  font-style: normal;
+  line-height: 1.905;
+  text-rendering: optimizeLegibility;
+}
+
+div {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #wrapper {
   width: 100%;
   max-width: none;
+  overflow: visible;
 }
 
 #header-bar {
@@ -20,8 +32,9 @@ body{
   background-color: #ece9e8;
   padding-top: 5px;
   padding-bottom: 10px;
-  padding-left: 15px;
   padding-right: 15px;
+  color: #5f504e;
+  padding-left: 15px;
 }
 
 .links {
@@ -36,15 +49,23 @@ body{
   position: relative;
   display: inline-block;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 550;
   color: white;
-  padding-left: 25px;
+  padding-left: 20px;
   padding-top: 13px;
   padding-right: 20px;
+  letter-spacing: 0.05em;
+  font-family: monospace;
+  text-decoration: none;
 }
 
 a.homehead {
   padding-left: 30px;
+}
+
+.links a:hover {
+    color: #f5a81d;
+    transition: .4s;
 }
 
 .nav {
