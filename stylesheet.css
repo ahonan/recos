@@ -69,15 +69,5 @@ a.homehead {
 }
 
 .main{
-  border-radius:15px;
-  border: 2px solid black;
-  padding: 4px;
   
-  margin:auto;
-  width:75%;
-  height:1000px;
-  top:10px;
-  clear:both;
-  background: #fff url("http://goo.gl/MG8PHu") repeat left top;
-  text-align:center;
 }
