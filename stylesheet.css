@@ -32,6 +32,21 @@ body{
   background-color: #202558;
 }
 
+.links a {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  padding-left: 25px;
+  padding-top: 13px;
+  padding-right: 20px;
+}
+
+a.homehead {
+  padding-left: 30px;
+}
+
 .nav {
   background: none;
   left: -250px;
