@@ -74,7 +74,7 @@ a.homehead {
 #banner {
   background-color: #fff;
   background-image: url("/home/bookshelf.jpg");
-  background-position: center bottom;
+  background-position: center center;
   background-repeat: no-repeat;
   padding-top: 90px;
   padding-bottom: 90px;
