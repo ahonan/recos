@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 body{
   font-family:"Times New Roman", Times, serif;
   left:0;
@@ -34,11 +38,8 @@ h1 {
   height: 45px;
   width: 100%;
   background-color: #ece9e8;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-right: 15px;
+  padding: 5px 15px 10px 15px;
   color: #5f504e;
-  padding-left: 15px;
 }
 
 .links {
@@ -120,6 +121,24 @@ a.homehead {
   text-align: left;
 }
 
+#fun_mode {
+  float:right;
+  font-family: "PT Sans";
+  font-size:16px;
+  position: relative;
+  top:9px;
+  border: none;
+  padding:10px;
+  border-radius:10px;
+  transition:.4s;
+}
+
+#fun_mode:hover {
+  opacity: .7;
+  transition:.4s;
+  cursor:pointer;
+}
+
 #top_picks_list {
   padding-left: 0;
   list-style: none;
@@ -193,4 +212,84 @@ a.homehead {
  .review {
    width: 98%;
    line-height: 1.5;
+ }
+ 
+ .genre_container {
+   height: 150px;
+   width: 100%;
+   margin-bottom:30px;
+   margin-top:25px;
+ }
+ 
+ .genre {
+   width:46%;
+   height:100%;
+   display:inline-block;
+   text-align:center;
+ }
+ 
+ .genre_title {
+   width:100%;
+   position:relative;
+   text-align:center;
+   line-height:150px;
+   z-index:0;
+ }
+ 
+ .genre_title h1 {
+   margin: auto;
+ }
+ 
+ .genre_span {
+   background-color: white;
+   border-radius: 5px;
+   padding:0px 5px 0px 5px;
+ }
+ 
+ .genre_back {
+   width: 100%;
+   display: inline-block;
+   height: 100%;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border: 1px solid black;
+   border-radius: 10px;
+   z-index:-1;
+   position:relative;
+   top:-150px;
+ }
+ 
+ .overlay {
+   width: 100%;
+   height: 100%;
+   border-radius:10px;
+   background-color:black;
+   opacity: 0;
+   transition: .4s;
+ }
+ 
+ .overlay:hover {
+   opacity:.3;
+   transition:.4s;
+ }
+ 
+ #financial {
+   background-image: url("/home/financial.jpg");
+ }
+ 
+ #academic {
+   background-image: url("/home/academic.jpg");
+ }
+ 
+ #self_improvement {
+   background-image: url("/home/self-improvement.jpg");
+ }
+ 
+ #fiction {
+   background-image: url("/home/fiction.jpg");
+ }
+ 
+ #academic_genre, #fiction_genre {
+   float:right;
  }
