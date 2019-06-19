@@ -167,6 +167,7 @@ a.homehead {
   text-align: center;
   font-family: "PT Sans";
   font-size: 14px;
+  float: right;
 }
 
 .book_img {
