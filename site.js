@@ -19,7 +19,7 @@ var main=function(){
   }
 
   $("#test").click(function() {
-    add_top_pick();
+    add_top_pick(the_subtle_art);
   });
 };
 $(document).ready(main);
