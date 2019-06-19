@@ -20,30 +20,30 @@
                 </div>
             </div>
         </div>
-
         <div class="main" style="max-width:100%">
             <div id="banner">
                 <h1 id="banner_label">
                     <span style="color:black; background-color:white;padding:10px 20px 10px 20px;border-radius:5px">RECOMMENDATIONS</span>
                 </h1>
             </div>
-            <hr class="full_line">
             <div id="top_picks">
+                <hr class="full_line">
                 <h1 id="top_picks_head">
                     <span>TOP PICKS</span>
+                    <button id="fun_mode">Toggle Fun Mode</button>
                 </h1>
                 <ul id="top_picks_list">
-                    <li>
+                    <!--<li>
                         <div class="book_img_container"><img class="book_img" src="/home/the_subtle_art.jpg"></div>
                         <div class="book_title_container"><span class="centerer"></span><span class="book_title">The Subtle Art of Not Giving a Fuck<br>By: Mark Manson</span></div>
                         <div class="gap"></div>
                         <div class="stars_container">
                             <span class="centerer"></span>
-                            <img class="stars" src="/home/apple.png">
-                            <img class="stars" src="/home/apple.png">
-                            <img class="stars" src="/home/apple.png">
-                            <img class="stars" src="/home/apple.png">
-                            <img class="stars" src="/home/apple.png">
+                            <img class="stars" src="home/apple.png">
+                            <img class="stars" src="home/apple.png">
+                            <img class="stars" src="home/apple.png">
+                            <img class="stars" src="home/apple.png">
+                            <img class="stars" src="home/apple.png">
                         </div>
                         <div class="gap"></div>
                         <div class="review_container">
@@ -53,11 +53,30 @@
                     </li>
                     <li>
                         <img class="book_img" src="/home/worldly_philosophers.jpg">
-                    </li>
+                    </li>-->
                 </ul>
                 <hr class="full_line">
             </div>
-            <button id="test">TEST!</button>
+            <div class="genre_container">
+                <div class="genre" id="financial_genre">
+                    <div class="genre_title" id="fin_title"><h1><span class="genre_span">Financial</span></h1></div>
+                    <div class="genre_back" id="financial"><div class="overlay" id="financial_overlay"></div></div>
+                </div>
+                <div class="genre" id="academic_genre">
+                    <div class="genre_title" id="aca_title"><h1><span class="genre_span">Academic</span></h1></div>
+                    <div class="genre_back" id="academic"><div class="overlay" id="academic_overlay"></div></div>
+                </div>
+            </div>
+            <div class="genre_container">
+                <div class="genre" id="self_improvement_genre">
+                    <div class="genre_title" id="si_title"><h1><span class="genre_span">Self-Improvement</span></h1></div>
+                    <div class="genre_back" id="self_improvement"><div class="overlay" id="self_improvement_overlay"></div></div>
+                </div>
+                <div class="genre" id="fiction_genre">
+                    <div class="genre_title" id="fic_title"><h1><span class="genre_span">Fiction</span></h1></div>
+                    <div class="genre_back" id="fiction"><div class="overlay" id="fiction_overlay"></div></div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
