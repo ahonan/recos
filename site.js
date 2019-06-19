@@ -18,6 +18,8 @@ var main=function(){
     $("#top_picks_list").append('<li><div class="book_img_container"><img class="book_img" src="/home/the_subtle_art.jpg"></div><div class="book_title_container"><span class="centerer"></span><span class="book_title">The Subtle Art of Not Giving a Fuck<br>By: Mark Manson</span></div><div class="gap"></div><div class="stars_container"><span class="centerer"></span><img class="stars" src="/home/apple.png"><img class="stars" src="/home/apple.png"><img class="stars" src="/home/apple.png"><img class="stars" src="/home/apple.png"><img class="stars" src="/home/apple.png"></div><div class="gap"></div><div class="review_container"><span class="centerer"></span><span class="review">This self-improvement book is a quick read, under 200 pages and not too dense. <b>Definitely</b> worth reading, although it\'s a little unconventional, there are some grade-A lessons in here.</span></div></li>')
   }
 
-  $("#test").click(add_top_pick());
+  $("#test").click(function() {
+    add_top_pick();
+  });
 };
 $(document).ready(main);
