@@ -80,7 +80,7 @@ a.homehead {
 
 #banner {
   background-color: #fff;
-  background-image: url("/home/bookshelf.jpg");
+  background-image: url("pics/bookshelf.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   padding-top: 50px;
@@ -275,21 +275,29 @@ a.homehead {
  }
  
  #financial {
-   background-image: url("/home/financial.jpg");
+   background-image: url("pics/financial.jpg");
  }
  
  #academic {
-   background-image: url("/home/academic.jpg");
+   background-image: url("pics/academic.jpg");
  }
  
  #self_improvement {
-   background-image: url("/home/self-improvement.jpg");
+   background-image: url("pics/self-improvement.jpg");
  }
  
  #fiction {
-   background-image: url("/home/fiction.jpg");
+   background-image: url("pics/fiction.jpg");
+ }
+ 
+ #top_picks_bg {
+   background-image: url("pics/bookshelf.jpg");
  }
  
  #academic_genre, #fiction_genre {
    float:right;
+ }
+ 
+ #top_picks_container {
+   text-align:center;
  }
