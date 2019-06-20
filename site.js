@@ -16,7 +16,7 @@ var main=function(){
 
   //Book Object
   var the_subtle_art = new Book("covers/the_subtle_art.jpg","The Subtle Art of Not Giving a Fuck","Mark Manson",5,"self-improvement",1,1,"This book is a quick read that opposes most modern self-help. Although it's a little unconventional, <b>definitely</b> worth reading, there's some grade-A advice in here.");
-  var the_worldly_philosophers = new Book("covers/worldly_philosophers.jpg","The Worldly Philosophers: ...","Robert Heilbroner",4,"Academic",3,2,"This book was quite dense, but still entertaining. Its accounts of the great economic thinkers was truly fascinating, especially the ones I thought I understood.");
+  var the_worldly_philosophers = new Book("covers/worldly_philosophers.jpg","The Worldly Philosophers","Robert Heilbroner",4,"Academic",3,2,"This book was quite dense, but still entertaining. Its accounts of the great economic thinkers was truly fascinating, especially the ones I thought I understood.");
   var win_friends = new Book("covers/win_friends.jpg","How to Win Friends and Influence People","Dale Carnegie",4,"self-improvement",2,2,"This book explains ways to make positive impressions and make people like/want to help you. It made me think about my actions a little more consciously, which is cool.");
   var omu = new Book("covers/omu.jpg","Our Mathematical Universe","Max Tegmark",5,"Academic",3,2,"This astrophysics book is a challenging read, but I think the author does a great job explaining very complicated ideas and making them understandable. Overall, it was simply mind-boggling.");
   var rdpd = new Book("covers/rdpd.jpg","Rich Dad Poor Dad","Robert Kiyosaki",4,"Financial",2,1,"This book is a pretty quick read. It's told through an interesting point of view and introduces the basics of investing in real estate and other things to build up 'passive income' that is part of a strong plan for retirement.");
@@ -29,13 +29,14 @@ var main=function(){
   var freakonomics = new Book("covers/freakonomics.jpg","Freakonomics","Steven D. Levitt & Stephen J. Dubner",5,"Academic",1,2,"This book is a classic. It brilliantly paints connections between seemingly unrelated economic things and worldly events (think outliers). Very interesting!");
   var gtd = new Book("covers/gtd.jpg","Getting Things Done","David Allen",3,"Self-Improvement",3,2,"This book isn't the easiest read, but the system that it describes is quite effective. It gives advice on how to prioritize/organize better and, obviously, get things done.");
   var miserable = new Book("covers/miserable.jpg","How to Be Miserable","Randy J. Paterson",4,"Self-Improvement",2,1,"This book describes things that we all do that make us miserable. The idea is that it's much more practical to try to avoid misery than to pursue happiness directly.");
+  var cherub = new Book("covers/cherub.jpg","Cherub (Series)","Robert Muchamore",5,"Fiction",1,2,"This is the only series I have read more than once. It's basically about British kids who become secret agents. (Disclaimer: I haven't read much fiction since middle school, so my recos might lack)");
   
   //Book Lists
   var top_picks = ["TOP PICKS",the_subtle_art,freakonomics,the_worldly_philosophers,win_friends,tmm];
   var financial = ["FINANCIAL",ira,tmm,rdpd,random_walk,mnd];
   var academic = ["ACADEMIC",freakonomics,the_worldly_philosophers,omu];
   var self_improvement = ["SELF-IMPROVEMENT",the_subtle_art,win_friends,miserable,gtd];
-  var fiction = ["FICTION",pandp,phantom_tollbooth];
+  var fiction = ["FICTION",pandp,cherub,phantom_tollbooth];
   
   function add_book(book) {
     var text = '<li><div class="book_img_container"><img class="book_img" src='+book.img_url+'></div><div class="book_title_container"><span class="centerer"></span><span class="book_title">'+book.title+'<br>By: '+book.author+'</span></div><div class="gap"></div><div class="stars_container"><span class="centerer"></span>'
