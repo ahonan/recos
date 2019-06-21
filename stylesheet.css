@@ -127,29 +127,75 @@ a.homehead {
   font-family: "PT Sans";
   font-size:16px;
   position: relative;
+  vertical-align:middle;
+  box-sizing:border-box;
   top:9px;
-  border: none;
   padding:10px;
-  border: 1px solid black;
-  border-radius:10px;
+  border: 0;
+  background:none;
   transition:.4s;
+  transition: color .25s;
+}
+
+#fun_mode::before, #fun_mode::after {
+  box-sizing:inherit;
+  content:'';
+  position:absolute;
+  border: 2px solid transparent;
+  width:0;
+  height:0;
+}
+
+#fun_mode::before {
+  top:0;
+  left:0;
+}
+
+#fun_mode::after {
+  bottom:0;
+  right:0;
 }
 
 #fun_mode:hover {
-  opacity: .7;
-  transition:.4s;
+  /*opacity: .7;*/
+  color:#60daaa;
   cursor:pointer;
+}
+
+#fun_mode:hover::before, #fun_mode:hover::after {
+  width:100%;
+  height:100%;
+}
+
+#fun_mode:hover::before {
+  border-top-color:#60daaa;
+  border-right-color:#60daaa;
+  transition: width .25s ease-out,height .25s ease-out .25s;
+}
+
+#fun_mode:hover::after {
+  border-bottom-color:#60daaa;
+  border-left-color:#60daaa;
+  transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s;
+}
+
+#fun_mode:focus {
+  outline:none;
 }
 
 #top_picks_list {
   padding-left: 0;
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #top_picks_list li {
-  margin-top: 20px;
+  padding:10px 0px 10px 10px;
   height: 100px;
+}
+
+#top_picks_list li:hover {
+  background-color:#ece9e8;
 }
 
 .gap, .book_img_container, .book_title_container, .stars_container, .review_container, .book_title, .stars, .review, .centerer {
@@ -179,7 +225,6 @@ a.homehead {
   width: 15%;
   height: 100%;
   text-align: center;
-  line-height: 100px;
 }
 
 .review_container {
