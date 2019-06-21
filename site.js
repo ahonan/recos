@@ -71,17 +71,17 @@ var main=function(){
   change_book_list(top_picks);
   
   //hover functions
-  $('#financial_genre').hover(function() {$('#financial_overlay').css("opacity",".3")},function(){$('#financial_overlay').css("opacity","0")});
-  $('#academic_genre').hover(function() {$('#academic_overlay').css("opacity",".3")},function(){$('#academic_overlay').css("opacity","0")});
-  $('#self_improvement_genre').hover(function() {$('#self_improvement_overlay').css("opacity",".3")},function(){$('#self_improvement_overlay').css("opacity","0")});
-  $('#fiction_genre').hover(function() {$('#fiction_overlay').css("opacity",".3")},function(){$('#fiction_overlay').css("opacity","0")});
-  $('#top_picks_genre').hover(function() {$('#top_picks_overlay').css("opacity",".3")},function(){$('#top_picks_overlay').css("opacity","0")});
+  $('#fin_title').hover(function() {$('#financial_overlay').css("opacity",".3")},function(){$('#financial_overlay').css("opacity","0")});
+  $('#aca_title').hover(function() {$('#academic_overlay').css("opacity",".3")},function(){$('#academic_overlay').css("opacity","0")});
+  $('#si_title').hover(function() {$('#self_improvement_overlay').css("opacity",".3")},function(){$('#self_improvement_overlay').css("opacity","0")});
+  $('#fic_title').hover(function() {$('#fiction_overlay').css("opacity",".3")},function(){$('#fiction_overlay').css("opacity","0")});
+  $('#tp_title').hover(function() {$('#top_picks_overlay').css("opacity",".3")},function(){$('#top_picks_overlay').css("opacity","0")});
 
   //click functions
-  $('#financial_genre').click(function(){change_book_list(financial)});
-  $('#academic_genre').click(function(){change_book_list(academic)});
-  $('#self_improvement_genre').click(function(){change_book_list(self_improvement)});
-  $('#fiction_genre').click(function(){change_book_list(fiction)});
-  $('#top_picks_genre').click(function(){change_book_list(top_picks)});
+  $('#fin_title').click(function(){change_book_list(financial)});
+  $('#aca_title').click(function(){change_book_list(academic)});
+  $('#si_title').click(function(){change_book_list(self_improvement)});
+  $('#fic_title').click(function(){change_book_list(fiction)});
+  $('#tp_title').click(function(){change_book_list(top_picks)});
 };
 $(document).ready(main);
