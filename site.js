@@ -31,7 +31,7 @@ var main=function(){
   var miserable = new Book("covers/miserable.jpg","How to Be Miserable","Randy J. Paterson",4,"Self-Improvement",2,1,"This book describes things that we all do that make us miserable. The idea is that it's much more practical to try to avoid misery than to pursue happiness directly.");
   var cherub = new Book("covers/cherub.jpg","Cherub (Series)","Robert Muchamore",5,"Fiction",1,2,"This is the only series I have read more than once. It's basically about British kids who become secret agents. (Disclaimer: I haven't read much fiction since middle school, so my recos might lack)");
   var factfulness = new Book("covers/factfulness.jpg","Factfulness","Hans Rosling",4,"Academic",2,2,"This book is another one that once you read it you think about so many everyday things differently. It discusses a lot of human psychology behind why we think things are worse than they really are.");
-  var transcend = new Book("cover/transcend.jpg","Transcend: 9 Steps to Living Well Forever","Ray Kurzweil & Terry Grossman",4,"Academic",2,3,"This book was absolutely fascinating. It mostly focuses on optimistic predictions for the future of medicine combined with studied ways to live healthier and extend life.");
+  var transcend = new Book("cover/transcend.jpg","Transcend: 9 Steps to Living Well Forever","Ray Kurzweil & Terry Grossman",4,"Academic",2,3,"This book is very interesting. It mostly focuses on optimistic predictions for the future of medicine combined with studied ways to live healthier and extend life.");
 
   
   //Book Lists
