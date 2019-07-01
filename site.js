@@ -35,10 +35,10 @@ var main=function(){
 
   
   //Book Lists
-  var top_picks = ["TOP PICKS",the_subtle_art,freakonomics,the_worldly_philosophers,win_friends,tmm];
+  var top_picks = ["TOP PICKS",the_subtle_art,freakonomics,the_worldly_philosophers,miserable,win_friends,transcend,tmm];
   var financial = ["FINANCIAL",ira,tmm,rdpd,random_walk,mnd];
-  var academic = ["ACADEMIC",freakonomics,the_worldly_philosophers,omu];
-  var self_improvement = ["SELF-IMPROVEMENT",the_subtle_art,win_friends,miserable,gtd];
+  var academic = ["ACADEMIC",freakonomics,the_worldly_philosophers,transcend,omu,factfulness];
+  var self_improvement = ["SELF-IMPROVEMENT",the_subtle_art,miserable,win_friends,gtd];
   var fiction = ["FICTION",pandp,cherub,phantom_tollbooth];
   
   function add_book(book) {
