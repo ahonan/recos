@@ -32,15 +32,15 @@ var main=function(){
   var cherub = new Book("covers/cherub.jpg","Cherub (Series)","Robert Muchamore",5,"Fiction",1,2,"This is the only series I have read more than once. It's basically about British kids who become secret agents. (Disclaimer: I haven't read much fiction since middle school, so my recos might lack)");
   var factfulness = new Book("covers/factfulness.jpg","Factfulness","Hans Rosling",4,"Academic",2,2,"This book is another one that once you read it you think about so many everyday things differently. It discusses a lot of human psychology behind why we think things are worse than they really are.");
   var transcend = new Book("covers/transcend.jpg","Transcend: 9 Steps to Living Well Forever","Ray Kurzweil & Terry Grossman",4,"Academic",2,3,"This book is very interesting. It mostly focuses on optimistic predictions for the future of medicine combined with studied ways to live healthier and extend life.");
+  var liars_poker = new Book("covers/liars_poker.jpg","Liar's Poker","Michael Lewis",5,"Financial",2,2,"A true story that was really fascinating and well-written. He tells about the bond trading industry in the 80's in a funny but informative way, quick read that's well worth the time.");
 
-  
   //Book Lists
-  var top_picks = ["TOP PICKS",the_subtle_art,freakonomics,the_worldly_philosophers,miserable,win_friends,transcend,tmm];
-  var financial = ["FINANCIAL",ira,tmm,rdpd,random_walk,mnd];
+  var top_picks = ["TOP PICKS",the_subtle_art,freakonomics,liars_poker,the_worldly_philosophers,miserable,win_friends];
+  var financial = ["FINANCIAL",ira,tmm,liars_poker,rdpd,random_walk,mnd];
   var academic = ["ACADEMIC",freakonomics,the_worldly_philosophers,transcend,omu,factfulness];
   var self_improvement = ["SELF-IMPROVEMENT",the_subtle_art,miserable,win_friends,gtd];
   var fiction = ["FICTION",pandp,cherub,phantom_tollbooth];
-  
+
   function add_book(book) {
     var text = '<li><div class="book_img_container"><img class="book_img" src='+book.img_url+'></div><div class="book_title_container"><span class="centerer"></span><span class="book_title">'+book.title+'<br>By: '+book.author+'</span></div><div class="gap"></div><div class="stars_container"><span class="centerer"></span>'
     for(var i=0;i<book.rating;i++) {
@@ -49,7 +49,7 @@ var main=function(){
     text += '</div><div class="gap"></div><div class="review_container"><span class="centerer"></span><span class="review">'+book.description+'</span></div></li>'
     $("#top_picks_list").append(text);
   }
-  
+
   function change_book_list (book_list) {
     $('#top_picks_list').empty();
     $('#list_header').text(book_list[0]);
@@ -57,7 +57,7 @@ var main=function(){
       add_book(book_list[i]);
     }
   }
-  
+
   $('#fun_mode').click(function() {
     if(fun) {
       $('.stars').attr("src","pics/star.png");
@@ -69,10 +69,10 @@ var main=function(){
       fun = true;
     }
   });
-  
+
   //startup
   change_book_list(top_picks);
-  
+
   //hover functions
   $('#fin_title').hover(function() {$('#financial_overlay').css("opacity",".3")},function(){$('#financial_overlay').css("opacity","0")});
   $('#aca_title').hover(function() {$('#academic_overlay').css("opacity",".3")},function(){$('#academic_overlay').css("opacity","0")});
